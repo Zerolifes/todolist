@@ -12,7 +12,6 @@ pygame.display.set_caption(CAPTION)
 
 #declare objects
 calendarManager = CalendarManager()
-text = Textviews("hello")
 
 running = True
 
@@ -26,8 +25,7 @@ while running:
     screen.fill(WHITE)
 
     # application 
-    text.draw(screen)
-
+    calendarManager.draw(screen)
 
     pygame.display.flip()
 
